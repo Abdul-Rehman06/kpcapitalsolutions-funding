@@ -1,0 +1,19 @@
+{
+  "name": "kp-captial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm --prefix ./calculator-app run dev",
+    "build": "npm --prefix ./calculator-app run build",
+    "preview": "npm --prefix ./calculator-app run preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.5.2",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^3.4.1"
+  }
+}
