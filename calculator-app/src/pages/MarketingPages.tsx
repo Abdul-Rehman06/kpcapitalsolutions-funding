@@ -1,6 +1,7 @@
 import { ArrowRight, Check, Clock3, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import kenBgImage from '../../../assets/images/ken-bg.png';
+import bgImage from '../../../assets/images/bg.webp';
 import kenImage from '../../../assets/images/Ken.png';
 
 const homeStats = [
@@ -385,7 +386,7 @@ export function HomePage() {
       </section>
 
       <section className="relative overflow-hidden border-t border-white/5 bg-navy-900 py-24">
-        <div className="capital-grid-bg absolute inset-0 opacity-10" />
+        <img src={bgImage} alt="Grid Background" className="absolute inset-0 h-full w-full object-cover opacity-10" />
         <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
           <Eyebrow center>Calculator</Eyebrow>
           <h2 className="mb-6 font-serif text-4xl font-bold md:text-5xl">
@@ -681,7 +682,8 @@ export function ContactPage() {
                   <div className="w-full">
                     <iframe 
                         src="https://funding.kpcapitalsolutions.com/widget/form/fCsZX72jyFYHkqNd1UcS" 
-                        style={{width: '100%', height: '800px', border: 'none', borderRadius: '0px'}} 
+                        style={{width: '100%', height: '1200px', border: 'none', borderRadius: '0px', overflow: 'hidden'}} 
+                        scrolling="no"
                         id="inline-fCsZX72jyFYHkqNd1UcS"  
                         data-layout="{'id':'INLINE'}" 
                         data-trigger-type="alwaysShow" 
