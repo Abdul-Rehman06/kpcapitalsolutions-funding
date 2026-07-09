@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import kenBgImage from '../../../assets/images/ken-bg.png';
 import bgImage from '../../../assets/images/bg.webp';
 import kenImage from '../../../assets/images/Ken.png';
+import { BackgroundPaths } from '../components/ui/background-paths';
 
 const homeStats = [
   { value: '72hrs', label: 'Fastest Loan Approval' },
@@ -429,16 +430,16 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="border-t border-white/5 bg-navy-800 py-24 text-center">
+      <BackgroundPaths className="border-t border-white/5 bg-navy-800 py-24 text-center">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="mb-6 font-serif text-4xl font-bold md:text-5xl">Ready to Build Your Capital Stack?</h2>
           <p className="mb-10 text-lg text-gray-400">
-            Book a 20-minute Funding Strategy Call. We will review your profile, identify your capital opportunity, and
+            Book a 30-minute Funding Strategy Call. We will review your profile, identify your capital opportunity, and
             tell you exactly what we can access for your business.
           </p>
           <ArrowLink to="/book-call">Book Your Strategy Call</ArrowLink>
         </div>
-      </section>
+      </BackgroundPaths>
     </main>
   );
 }
@@ -600,7 +601,7 @@ export function AboutPage() {
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="mb-6 font-serif text-4xl font-bold md:text-5xl">Ready to Work With Us?</h2>
           <p className="mb-10 text-lg text-gray-600">
-            Book a 20-minute Funding Strategy Call with Solomon. We will review your profile and tell you exactly what
+            Book a 30-minute Funding Strategy Call with Solomon. We will review your profile and tell you exactly what
             capital we can access for your business.
           </p>
           <ArrowLink to="/book-call">Book Your Strategy Call</ArrowLink>
@@ -723,7 +724,7 @@ export function BookCallPage() {
             Call
           </h1>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-300">
-            A 20-minute call where we review your profile, identify your capital opportunity, and tell you exactly what
+            A 30-minute call where we review your profile, identify your capital opportunity, and tell you exactly what
             we can access for your business.
           </p>
         </div>
@@ -760,7 +761,7 @@ export function BookCallPage() {
               </div>
 
               <ul className="list-inside list-disc space-y-3 pl-2 text-xs text-gray-500">
-                <li>20-minute call</li>
+                <li>30-minute call</li>
                 <li>No cost, no obligation</li>
                 <li>For businesses doing $25K+ per month</li>
               </ul>
