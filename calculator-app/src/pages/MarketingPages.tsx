@@ -1,9 +1,9 @@
 import { ArrowRight, Check, Clock3, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import kenBgImage from '../../../assets/images/ken-bg.png';
 import kenImage from '../../../assets/images/Ken.png';
 
 const homeStats = [
-  { value: '$500K+', label: 'Average Funding Amount' },
   { value: '72hrs', label: 'Fastest Loan Approval' },
   { value: '100%', label: 'Funding Commitment' },
   { value: '$25M+', label: 'Funding Capital Deployed' },
@@ -232,7 +232,7 @@ export function HomePage() {
       <section className="relative overflow-hidden bg-navy-900 pb-48 pt-32">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop"
+            src={kenBgImage}
             alt="Executive in office"
             className="h-full w-full object-cover opacity-30 mix-blend-luminosity"
           />

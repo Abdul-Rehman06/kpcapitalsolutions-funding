@@ -254,6 +254,37 @@ function CalculatorResult() {
           <div className="text-xs text-gray-400">Qualification score: {score} | Based on {qualifiedPrograms.length} qualifying programs</div>
         </div>
 
+        <div className="rounded-lg bg-navy-900 p-8 text-white shadow-xl">
+          <h3 className="mb-2 font-serif text-xl font-bold">Unlock Your Full Capital Stack Report</h3>
+          <p className="mb-8 text-xs leading-relaxed text-gray-400">
+            Complete the short application below. A funding advisor will review your profile and reach out within 1 business day.
+          </p>
+
+          <div className="rounded bg-white p-8 text-navy-900">
+            <iframe 
+                src="https://funding.kpcapitalsolutions.com/widget/form/A5Yx3MTee2EkyAovKfAg" 
+                style={{width: '100%', height: '1200px', border: 'none', borderRadius: '0px'}} 
+                id="inline-A5Yx3MTee2EkyAovKfAg"  
+                data-layout="{'id':'INLINE'}" 
+                data-trigger-type="alwaysShow" 
+                data-trigger-value="" 
+                data-activation-type="alwaysActivated" 
+                data-activation-value="" 
+                data-deactivation-type="neverDeactivate" 
+                data-deactivation-value="" 
+                data-form-name="UNLOCK REPORT FORM" 
+                data-height="1200" 
+                data-layout-iframe-id="inline-A5Yx3MTee2EkyAovKfAg" 
+                data-form-id="A5Yx3MTee2EkyAovKfAg" 
+                title="UNLOCK REPORT FORM" 
+            > 
+            </iframe> 
+            <script src="https://funding.kpcapitalsolutions.com/js/form_embed.js"> </script>
+          </div>
+
+          <div className="mt-6 text-center text-[0.65rem] text-gray-500">No obligation. We only get paid when you get funded.</div>
+        </div>
+
         <div className="overflow-hidden rounded-lg border border-gray-100 bg-white p-8 shadow-sm">
           <h3 className="mb-2 font-serif text-lg font-bold text-navy-900">Your Qualifying Programs</h3>
           <p className="mb-6 text-xs text-gray-500">Unlocked programs are visible below. Full lender sequencing is included after lead capture.</p>
@@ -282,37 +313,6 @@ function CalculatorResult() {
               ))}
             </div>
           </div>
-        </div>
-
-        <div className="rounded-lg bg-navy-900 p-8 text-white shadow-xl">
-          <h3 className="mb-2 font-serif text-xl font-bold">Unlock Your Full Capital Stack Report</h3>
-          <p className="mb-8 text-xs leading-relaxed text-gray-400">
-            Complete the short application below. A funding advisor will review your profile and reach out within 1 business day.
-          </p>
-
-          <div className="rounded bg-white p-8 text-navy-900">
-            <iframe 
-                src="https://funding.kpcapitalsolutions.com/widget/form/A5Yx3MTee2EkyAovKfAg" 
-                style={{width: '100%', height: '800px', border: 'none', borderRadius: '0px'}} 
-                id="inline-A5Yx3MTee2EkyAovKfAg"  
-                data-layout="{'id':'INLINE'}" 
-                data-trigger-type="alwaysShow" 
-                data-trigger-value="" 
-                data-activation-type="alwaysActivated" 
-                data-activation-value="" 
-                data-deactivation-type="neverDeactivate" 
-                data-deactivation-value="" 
-                data-form-name="UNLOCK REPORT FORM" 
-                data-height="700" 
-                data-layout-iframe-id="inline-A5Yx3MTee2EkyAovKfAg" 
-                data-form-id="A5Yx3MTee2EkyAovKfAg" 
-                title="UNLOCK REPORT FORM" 
-            > 
-            </iframe> 
-            <script src="https://funding.kpcapitalsolutions.com/js/form_embed.js"> </script>
-          </div>
-
-          <div className="mt-6 text-center text-[0.65rem] text-gray-500">No obligation. We only get paid when you get funded.</div>
         </div>
       </div>
     </main>
