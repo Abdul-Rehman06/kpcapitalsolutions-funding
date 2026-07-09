@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Mail, MapPin, Menu, Phone, X } from 'lucide-react';
+import mainLogo from '../../../assets/logos/Main-Logo.png';
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -59,18 +60,15 @@ export function SiteLayout() {
           <div>Katy, TX - Serving Businesses Nationwide</div>
           <a href="tel:9793563927" className="flex items-center gap-2 transition-colors hover:text-white">
             <Phone className="h-3 w-3" />
-            <span>(979) 356-3927</span>
+            <span>+1 770-355-3353</span>
           </a>
         </div>
       </div>
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-navy-900/95 backdrop-blur">
         <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-6">
-          <Link to="/" className="flex flex-col">
-            <span className="font-serif text-2xl font-bold tracking-wide">The Funding Dept.</span>
-            <span className="mt-1 text-[0.65rem] uppercase tracking-[0.2em] text-gold-500">
-              Commercial Funding Advisory
-            </span>
+          <Link to="/" className="flex items-center">
+            <img src={mainLogo} alt="KP Capital Funding" className="h-16 w-auto" />
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
@@ -126,11 +124,8 @@ export function SiteLayout() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-16 grid grid-cols-1 gap-12 md:grid-cols-3 lg:grid-cols-4 lg:gap-8">
             <div className="lg:col-span-2">
-              <Link to="/" className="mb-6 flex flex-col">
-                <span className="font-serif text-2xl font-bold tracking-wide text-white">The Funding Dept.</span>
-                <span className="mt-1 text-[0.65rem] uppercase tracking-[0.2em] text-gold-500">
-                  Commercial Funding Advisory
-                </span>
+              <Link to="/" className="mb-6 flex items-center">
+                <img src={mainLogo} alt="KP Capital Funding" className="h-20 w-auto" />
               </Link>
               <p className="mb-8 max-w-sm text-sm leading-relaxed text-gray-400">
                 Your Off-Site Funding Department. We help established businesses access the capital they need to scale
@@ -138,15 +133,15 @@ export function SiteLayout() {
               </p>
               <div className="flex flex-col gap-3 text-sm text-gray-300">
                 <a
-                  href="mailto:info@thefundingdept.com"
+                  href="mailto:info@kpcapitalfunding.com"
                   className="flex items-center gap-3 transition-colors hover:text-white"
                 >
                   <Mail className="h-4 w-4 text-gold-500" />
-                  <span>info@thefundingdept.com</span>
+                  <span>info@kpcapitalfunding.com</span>
                 </a>
                 <a href="tel:9793563927" className="flex items-center gap-3 transition-colors hover:text-white">
                   <Phone className="h-4 w-4 text-gold-500" />
-                  <span>(979) 356-3927</span>
+                  <span>+1 770-355-3353</span>
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-1 h-4 w-4 flex-shrink-0 text-gold-500" />
@@ -191,9 +186,9 @@ export function SiteLayout() {
           </div>
 
           <div className="flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-xs text-gray-500 md:flex-row md:items-center">
-            <p>&copy; 2024 The Funding Dept. All rights reserved. Katy, TX.</p>
+            <p>&copy; 2024 KP Capital Funding. All rights reserved. Katy, TX.</p>
             <p className="max-w-2xl leading-relaxed md:text-left">
-              The Funding Dept is a commercial funding advisory firm. We do not guarantee funding approvals. Results
+              KP Capital Funding is a commercial funding advisory firm. We do not guarantee funding approvals. Results
               vary based on individual business profile, credit history, and lender availability. This website is for
               informational purposes only and does not constitute financial advice.
             </p>

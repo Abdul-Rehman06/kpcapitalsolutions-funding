@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import { useForm } from 'react-hook-form';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AlertTriangle, ArrowLeft, Check, ChevronRight, Lock } from 'lucide-react';
 import { useCalculatorStore } from '../store';
@@ -56,18 +55,6 @@ const questions = [
     options: ['Under 50K', '50K-100K', '100K-250K', '250K-500K', '500K+'],
   },
 ] as const;
-
-type LeadFormValues = {
-  firstName: string;
-  lastName: string;
-  businessName: string;
-  email: string;
-  phone: string;
-  fundingNeeded: string;
-  revenue: string;
-  credit: string;
-  notes: string;
-};
 
 export function CalculatorPage() {
   const { step, nextStep, prevStep, setAnswer, togglePurpose, ...state } = useCalculatorStore();
@@ -232,34 +219,6 @@ function CalculatorResult() {
     state.monthlyRevenue === '100K-250K' || state.monthlyRevenue === '250K+' ? 'Premium Programs Unlocked' : null,
   ].filter(Boolean) as string[];
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-  } = useForm<LeadFormValues>({
-    defaultValues: {
-      fundingNeeded: state.fundingAmount,
-      revenue: state.monthlyRevenue,
-      credit: state.creditScore,
-    },
-  });
-
-  const onSubmit = async (lead: LeadFormValues) => {
-    const payload = {
-      score,
-      tier,
-      estimatedFunding,
-      qualifiedPrograms,
-      answers: state,
-      recommendations,
-      lead,
-    };
-
-    console.log('GoHighLevel payload', payload);
-    await new Promise((resolve) => setTimeout(resolve, 600));
-    window.alert('Application submitted! We will contact you shortly.');
-  };
-
   return (
     <main className="flex-grow bg-[#fafafa] pb-24 pt-12">
       <div className="bg-navy-900 px-6 py-16 text-center text-white">
@@ -331,107 +290,31 @@ function CalculatorResult() {
             Complete the short application below. A funding advisor will review your profile and reach out within 1 business day.
           </p>
 
-          <form onSubmit={handleSubmit(onSubmit)} className="rounded bg-white p-8 text-navy-900">
-            <div className="space-y-6">
-              <div className="grid gap-4 md:grid-cols-2">
-                <FormField label="First Name *" error={errors.firstName?.message}>
-                  <input
-                    {...register('firstName', { required: 'First name is required' })}
-                    className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                  />
-                </FormField>
-                <FormField label="Last Name *" error={errors.lastName?.message}>
-                  <input
-                    {...register('lastName', { required: 'Last name is required' })}
-                    className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                  />
-                </FormField>
-              </div>
-
-              <FormField label="Business Name *" error={errors.businessName?.message}>
-                <input
-                  {...register('businessName', { required: 'Business name is required' })}
-                  className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                />
-              </FormField>
-
-              <div className="grid gap-4 md:grid-cols-2">
-                <FormField label="Email Address *" error={errors.email?.message}>
-                  <input
-                    type="email"
-                    {...register('email', { required: 'Email is required' })}
-                    className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                  />
-                </FormField>
-                <FormField label="Phone Number *" error={errors.phone?.message}>
-                  <input
-                    {...register('phone', { required: 'Phone number is required' })}
-                    className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                  />
-                </FormField>
-              </div>
-
-              <div className="grid gap-4 md:grid-cols-3">
-                <FormField label="Funding Needed *" error={errors.fundingNeeded?.message}>
-                  <input
-                    {...register('fundingNeeded', { required: 'Funding amount is required' })}
-                    className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                  />
-                </FormField>
-                <FormField label="Revenue">
-                  <input
-                    {...register('revenue')}
-                    className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                  />
-                </FormField>
-                <FormField label="Credit">
-                  <input
-                    {...register('credit')}
-                    className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                  />
-                </FormField>
-              </div>
-
-              <FormField label="Notes">
-                <textarea
-                  rows={4}
-                  {...register('notes')}
-                  className="w-full rounded border border-gray-200 px-4 py-3 text-sm focus:border-gold-500 focus:outline-none"
-                />
-              </FormField>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="mt-8 flex w-full items-center justify-center gap-2 rounded bg-gold-500 py-4 text-sm font-bold uppercase tracking-widest text-white transition-colors hover:bg-gold-400 disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                {isSubmitting ? 'Submitting...' : 'Unlock Report'}
-                <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
-          </form>
+          <div className="rounded bg-white p-8 text-navy-900">
+            <iframe 
+                src="https://funding.kpcapitalsolutions.com/widget/form/A5Yx3MTee2EkyAovKfAg" 
+                style={{width: '100%', height: '100%', border: 'none', borderRadius: '0px'}} 
+                id="inline-A5Yx3MTee2EkyAovKfAg"  
+                data-layout="{'id':'INLINE'}" 
+                data-trigger-type="alwaysShow" 
+                data-trigger-value="" 
+                data-activation-type="alwaysActivated" 
+                data-activation-value="" 
+                data-deactivation-type="neverDeactivate" 
+                data-deactivation-value="" 
+                data-form-name="UNLOCK REPORT FORM" 
+                data-height="700" 
+                data-layout-iframe-id="inline-A5Yx3MTee2EkyAovKfAg" 
+                data-form-id="A5Yx3MTee2EkyAovKfAg" 
+                title="UNLOCK REPORT FORM" 
+            > 
+            </iframe> 
+            <script src="https://funding.kpcapitalsolutions.com/js/form_embed.js"> </script>
+          </div>
 
           <div className="mt-6 text-center text-[0.65rem] text-gray-500">No obligation. We only get paid when you get funded.</div>
         </div>
       </div>
     </main>
-  );
-}
-
-function FormField({
-  label,
-  error,
-  children,
-}: {
-  label: string;
-  error?: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <label className="block">
-      <span className="mb-2 block text-xs font-bold uppercase tracking-widest text-gray-700">{label}</span>
-      {children}
-      {error ? <span className="mt-1 block text-xs text-red-600">{error}</span> : null}
-    </label>
   );
 }

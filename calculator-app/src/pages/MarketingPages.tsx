@@ -1,4 +1,4 @@
-import { ArrowRight, Check, ChevronLeft, ChevronRight, Clock3, Mail, MapPin, MonitorPlay, Phone } from 'lucide-react';
+import { ArrowRight, Check, Clock3, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const homeStats = [
@@ -231,7 +231,7 @@ export function HomePage() {
       <section className="relative overflow-hidden bg-navy-900 pb-48 pt-32">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=luxury%20commercial%20office%20boardroom%2C%20African%20American%20male%20executive%20in%20tailored%20navy%20suit%20seated%20at%20conference%20table%2C%20floor%20to%20ceiling%20windows%2C%20city%20skyline%2C%20cinematic%20lighting%2C%20premium%20fintech%20editorial%20photography%2C%20realistic%2C%20professional%2C%20deep%20blue%20tones&image_size=landscape_16_9"
+            src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop"
             alt="Executive in office"
             className="h-full w-full object-cover opacity-30 mix-blend-luminosity"
           />
@@ -314,13 +314,13 @@ export function HomePage() {
 
           <div className="relative">
             <img
-              src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=confident%20African%20American%20male%20founder%20wearing%20luxury%20camel%20plaid%20coat%20standing%20against%20white%20brick%20wall%2C%20editorial%20portrait%2C%20premium%20business%20brand%20photography%2C%20realistic%2C%20sharp%20detail&image_size=portrait_4_3"
-              alt="Solomon Woods"
+              src="assets/images/Ken.png"
+              alt="Kenneth Buckner"
               className="w-full rounded-sm shadow-2xl"
             />
             <div className="absolute -bottom-8 -left-8 max-w-md bg-navy-900 p-8 text-white shadow-2xl">
               <p className="mb-4 font-serif text-lg italic">"We build the business. We build the capital stack that funds it even better."</p>
-              <div className="text-[0.65rem] font-bold uppercase tracking-widest text-gold-500">— Solomon Woods, Founder</div>
+              <div className="text-[0.65rem] font-bold uppercase tracking-widest text-gold-500">— Kenneth Buckner, Founder</div>
             </div>
           </div>
         </div>
@@ -507,7 +507,7 @@ export function AboutPage() {
       <section className="relative overflow-hidden bg-navy-900 pb-40 pt-32">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=modern%20glass%20office%20tower%20interior%20with%20tall%20windows%2C%20deep%20blue%20architectural%20tones%2C%20luxury%20corporate%20environment%2C%20cinematic%20commercial%20photography%2C%20realistic&image_size=landscape_16_9"
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
             alt="Office building"
             className="h-full w-full object-cover opacity-20 mix-blend-luminosity"
           />
@@ -519,7 +519,7 @@ export function AboutPage() {
             <Eyebrow>About</Eyebrow>
             <h1 className="mb-8 font-serif text-5xl font-bold leading-tight md:text-6xl">The Team Behind Your Capital</h1>
             <p className="text-lg leading-relaxed text-gray-300">
-              The Funding Dept. was built on one belief: established business owners deserve a dedicated funding team,
+              KP Capital Funding. was built on one belief: established business owners deserve a dedicated funding team,
               not a loan broker, not an algorithm, not a bank that does not know their name.
             </p>
           </div>
@@ -530,35 +530,35 @@ export function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2">
           <div>
             <img
-              src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=confident%20African%20American%20male%20founder%20wearing%20luxury%20camel%20plaid%20coat%20standing%20against%20white%20brick%20wall%2C%20editorial%20portrait%2C%20premium%20business%20brand%20photography%2C%20realistic%2C%20sharp%20detail&image_size=portrait_4_3"
-              alt="Solomon Woods"
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop"
+              alt="Kenneth Buckner"
               className="w-full rounded-sm shadow-xl"
             />
           </div>
           <div>
             <Eyebrow>Founder</Eyebrow>
-            <h2 className="mb-2 font-serif text-4xl font-bold">Solomon Woods</h2>
+            <h2 className="mb-2 font-serif text-4xl font-bold">Kenneth Buckner</h2>
             <div className="mb-8 text-[0.65rem] font-bold uppercase tracking-[0.1em] text-gray-400">
-              Solomon Woods, Founder & Lead Funding Advisor - Katy, TX
+              Kenneth Buckner, Founder & Lead Funding Advisor - Katy, TX
             </div>
             <div className="mb-8 border-l-2 border-gold-500 pl-6">
               <p className="font-serif text-xl italic leading-relaxed text-gray-700">
-                "I built The Funding Dept. because I kept watching great business owners get turned down not because
+                "I built KP Capital Funding. because I kept watching great business owners get turned down not because
                 they did not qualify, but because nobody was running the process for them."
               </p>
             </div>
             <div className="mb-10 space-y-6 text-sm leading-relaxed text-gray-600">
               <p>
-                Solomon Woods has spent years at the intersection of business credit, commercial lending, and financial
+                Kenneth Buckner has spent years at the intersection of business credit, commercial lending, and financial
                 strategy working with franchise operators, home service businesses, real estate developers, healthcare
                 practices, and growth-stage companies across the country.
               </p>
               <p>
-                After seeing the same patterns repeat, Solomon built The Funding Dept. to solve the problem at its
+                After seeing the same patterns repeat, Solomon built KP Capital Funding. to solve the problem at its
                 root: most business owners do not have a dedicated funding team.
               </p>
               <p>
-                Based in Katy, TX, The Funding Dept. serves established businesses nationwide. Solomon personally
+                Based in Katy, TX, KP Capital Funding. serves established businesses nationwide. Solomon personally
                 oversees every client engagement and maintains direct relationships with the bank representatives,
                 underwriters, and lenders that matter.
               </p>
@@ -629,9 +629,9 @@ export function ContactPage() {
                 <h2 className="mb-8 font-serif text-2xl font-bold">Contact Information</h2>
                 <div className="space-y-6">
                   {[
-                    { icon: Mail, label: 'Email', value: 'info@thefundingdept.com', href: 'mailto:info@thefundingdept.com' },
+                    { icon: Mail, label: 'Email', value: 'info@kpcapitalfunding.com', href: 'mailto:info@kpcapitalfunding.com' },
                     { icon: MapPin, label: 'Location', value: 'Katy, TX', subtext: 'Serving businesses nationwide' },
-                    { icon: Phone, label: 'Phone', value: '(979) 356-3927', href: 'tel:9793563927' },
+                    { icon: Phone, label: 'Phone', value: '+1 770-355-3353', href: 'tel:9793563927' },
                     { icon: Clock3, label: 'Response Time', value: 'Within 1 business day' },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-4">
@@ -677,25 +677,26 @@ export function ContactPage() {
                   </p>
                 </div>
                 <div className="flex flex-grow items-center justify-center bg-gray-100 p-12">
-                  <div className="w-full max-w-md bg-white shadow-lg">
-                    <div className="p-10 text-center">
-                      <label htmlFor="funding-amount" className="mb-8 block text-lg font-bold text-navy-900">
-                        How much funding are you seeking? *
-                      </label>
-                      <input
-                        id="funding-amount"
-                        type="text"
-                        placeholder="$"
-                        className="mb-8 w-full border-b-2 border-gray-300 py-2 text-center text-xl transition-colors placeholder-gray-300 focus:border-gold-500 focus:outline-none"
-                      />
-                    </div>
-                    <button
-                      type="button"
-                      className="flex w-full items-center justify-center gap-2 bg-gold-500 py-4 font-bold text-white transition-colors hover:bg-gold-400"
-                    >
-                      <span>NEXT</span>
-                      <ArrowRight className="h-5 w-5" />
-                    </button>
+                  <div className="w-full">
+                    <iframe 
+                        src="https://funding.kpcapitalsolutions.com/widget/form/fCsZX72jyFYHkqNd1UcS" 
+                        style={{width: '100%', height: '100%', border: 'none', borderRadius: '0px'}} 
+                        id="inline-fCsZX72jyFYHkqNd1UcS"  
+                        data-layout="{'id':'INLINE'}" 
+                        data-trigger-type="alwaysShow" 
+                        data-trigger-value="" 
+                        data-activation-type="alwaysActivated" 
+                        data-activation-value="" 
+                        data-deactivation-type="neverDeactivate" 
+                        data-deactivation-value="" 
+                        data-form-name="Contact Form" 
+                        data-height="614" 
+                        data-layout-iframe-id="inline-fCsZX72jyFYHkqNd1UcS" 
+                        data-form-id="fCsZX72jyFYHkqNd1UcS" 
+                        title="Contact Form" 
+                    > 
+                    </iframe> 
+                    <script src="https://funding.kpcapitalsolutions.com/js/form_embed.js"></script>
                   </div>
                 </div>
               </div>
@@ -752,7 +753,7 @@ export function BookCallPage() {
                   "We only get paid when you get funded. This call costs you nothing and could unlock six figures in
                   capital for your business."
                 </p>
-                <div className="text-[0.65rem] font-bold uppercase tracking-widest text-gold-500">— Solomon Woods, Founder</div>
+                <div className="text-[0.65rem] font-bold uppercase tracking-widest text-gold-500">— Kenneth Buckner, Founder</div>
               </div>
 
               <ul className="list-inside list-disc space-y-3 pl-2 text-xs text-gray-500">
@@ -764,91 +765,7 @@ export function BookCallPage() {
 
             <div className="lg:col-span-7">
               <div className="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-2xl">
-                <div className="border-b border-navy-800 bg-navy-900 p-6 text-white">
-                  <h3 className="text-lg font-bold">Schedule With Solomon</h3>
-                  <p className="text-xs text-gray-400">Select a date and time that works for you</p>
-                </div>
-
-                <div className="p-8">
-                  <h2 className="mb-6 font-serif text-2xl font-bold text-navy-900">The Funding Department Consultation</h2>
-                  <div className="mb-8 flex flex-col gap-3 text-sm text-gray-500">
-                    <div className="flex items-center gap-3">
-                      <Clock3 className="h-5 w-5" />
-                      <span>20 min</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <MonitorPlay className="h-5 w-5" />
-                      <span>Web conferencing details provided upon confirmation.</span>
-                    </div>
-                  </div>
-
-                  <div className="border-t border-gray-100 pt-8">
-                    <h4 className="mb-6 font-bold">Select Date & Time</h4>
-                    <div className="grid gap-8 md:grid-cols-2">
-                      <div>
-                        <div className="mb-4 flex items-center justify-between">
-                          <button type="button" className="rounded-full p-1 transition-colors hover:bg-gray-100">
-                            <ChevronLeft className="h-5 w-5 text-gray-400" />
-                          </button>
-                          <div className="font-bold">July 2026</div>
-                          <button type="button" className="rounded-full p-1 transition-colors hover:bg-gray-100">
-                            <ChevronRight className="h-5 w-5 text-navy-900" />
-                          </button>
-                        </div>
-
-                        <div className="mb-2 grid grid-cols-7 gap-1 text-center text-xs text-gray-500">
-                          {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map((day) => (
-                            <div key={day}>{day}</div>
-                          ))}
-                        </div>
-
-                        <div className="grid grid-cols-7 gap-1 text-center text-sm">
-                          {['28', '29', '30', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '1'].map(
-                            (day, index) => {
-                              const isMuted = index < 3 || index === 34;
-                              const isSelected = day === '6';
-                              const isSoftSelected = day === '7';
-                              return (
-                                <div
-                                  key={`${day}-${index}`}
-                                  className={`p-2 ${
-                                    isSelected
-                                      ? 'rounded-full bg-navy-900 font-bold text-white shadow-md'
-                                      : isSoftSelected
-                                        ? 'rounded-full bg-gray-100 font-bold text-navy-900'
-                                        : isMuted
-                                          ? 'text-gray-300'
-                                          : 'cursor-pointer rounded-full font-bold text-navy-900 hover:bg-gray-100'
-                                  }`}
-                                >
-                                  {day}
-                                </div>
-                              );
-                            },
-                          )}
-                        </div>
-
-                        <div className="mt-6 flex items-center gap-2 text-xs font-bold text-gray-500">
-                          <MonitorPlay className="h-4 w-4" />
-                          <span>Central Time - US & Canada</span>
-                        </div>
-                      </div>
-
-                      <div className="custom-scrollbar flex h-64 flex-col gap-3 overflow-y-auto pr-2">
-                        <div className="mb-2 text-sm font-bold text-gray-500">Monday, July 6</div>
-                        {['09:00 AM', '09:30 AM', '10:00 AM', '10:30 AM', '11:00 AM', '11:30 AM', '01:00 PM', '01:30 PM'].map((time) => (
-                          <button
-                            key={time}
-                            type="button"
-                            className="w-full rounded-sm border border-navy-900 py-3 text-sm font-bold text-navy-900 transition-all hover:border-2 hover:bg-gray-50"
-                          >
-                            {time}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <iframe src="https://funding.kpcapitalsolutions.com/widget/booking/KwRtTbJiggXtoWBmwLZt" style={{width: '100%', border: 'none', overflow: 'hidden', height: '800px'}} scrolling="no" id="KwRtTbJiggXtoWBmwLZt_1783600679722"></iframe><br/><script src="https://funding.kpcapitalsolutions.com/js/form_embed.js" type="text/javascript"></script>
               </div>
             </div>
           </div>

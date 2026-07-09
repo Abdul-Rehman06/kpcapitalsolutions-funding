@@ -1,6 +1,6 @@
-# The Funding Dept. - Commercial Funding Advisory
+# KP Capital Funding. - Commercial Funding Advisory
 
-This project is a pixel-perfect, fully responsive recreation of "The Funding Dept." website based on provided screenshots. It was built using modern web development practices and focuses on high performance, accessibility, and maintainability.
+This project is a pixel-perfect, fully responsive recreation of "KP Capital Funding." website based on provided screenshots. It was built using modern web development practices and focuses on high performance, accessibility, and maintainability.
 
 ## Technology Stack
 - **HTML5**: Semantic, clean structure.
