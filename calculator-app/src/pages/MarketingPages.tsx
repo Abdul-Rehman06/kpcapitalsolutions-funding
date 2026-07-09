@@ -1,5 +1,6 @@
 import { ArrowRight, Check, Clock3, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import kenImage from '../../../assets/images/Ken.png';
 
 const homeStats = [
   { value: '$500K+', label: 'Average Funding Amount' },
@@ -314,7 +315,7 @@ export function HomePage() {
 
           <div className="relative">
             <img
-              src="assets/images/Ken.png"
+              src={kenImage}
               alt="Kenneth Buckner"
               className="w-full rounded-sm shadow-2xl"
             />
@@ -530,7 +531,7 @@ export function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-16 px-6 lg:grid-cols-2">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop"
+              src={kenImage}
               alt="Kenneth Buckner"
               className="w-full rounded-sm shadow-xl"
             />
@@ -680,7 +681,7 @@ export function ContactPage() {
                   <div className="w-full">
                     <iframe 
                         src="https://funding.kpcapitalsolutions.com/widget/form/fCsZX72jyFYHkqNd1UcS" 
-                        style={{width: '100%', height: '100%', border: 'none', borderRadius: '0px'}} 
+                        style={{width: '100%', height: '800px', border: 'none', borderRadius: '0px'}} 
                         id="inline-fCsZX72jyFYHkqNd1UcS"  
                         data-layout="{'id':'INLINE'}" 
                         data-trigger-type="alwaysShow" 

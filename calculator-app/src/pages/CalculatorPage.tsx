@@ -293,7 +293,7 @@ function CalculatorResult() {
           <div className="rounded bg-white p-8 text-navy-900">
             <iframe 
                 src="https://funding.kpcapitalsolutions.com/widget/form/A5Yx3MTee2EkyAovKfAg" 
-                style={{width: '100%', height: '100%', border: 'none', borderRadius: '0px'}} 
+                style={{width: '100%', height: '800px', border: 'none', borderRadius: '0px'}} 
                 id="inline-A5Yx3MTee2EkyAovKfAg"  
                 data-layout="{'id':'INLINE'}" 
                 data-trigger-type="alwaysShow" 
