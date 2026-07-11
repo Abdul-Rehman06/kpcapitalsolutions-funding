@@ -231,7 +231,7 @@ function ArrowLink({ to, children, outline = false }: { to: string; children: Re
 export function HomePage() {
   return (
     <main className="flex-grow">
-      <section className="relative overflow-hidden bg-navy-900 pb-48 pt-32">
+      <section className="relative flex min-h-[90vh] flex-col justify-center overflow-hidden bg-navy-900 pb-48 pt-24 lg:min-h-screen lg:pb-0 lg:pt-0">
         <div className="absolute inset-0 z-0">
           <img
             src={kenBgImage}
@@ -542,7 +542,7 @@ export function AboutPage() {
             <Eyebrow>Founder</Eyebrow>
             <h2 className="mb-2 font-serif text-4xl font-bold">Kenneth Buckner</h2>
             <div className="mb-8 text-[0.65rem] font-bold uppercase tracking-[0.1em] text-gray-400">
-              Kenneth Buckner, Founder & Lead Funding Advisor - Katy, TX
+              Kenneth Buckner, Founder & Lead Funding Advisor - Alpharetta, GA
             </div>
             <div className="mb-8 border-l-2 border-gold-500 pl-6">
               <p className="font-serif text-xl italic leading-relaxed text-gray-700">
@@ -561,13 +561,13 @@ export function AboutPage() {
                 root: most business owners do not have a dedicated funding team.
               </p>
               <p>
-                Based in Katy, TX, KP Capital Funding. serves established businesses nationwide. Solomon personally
+                Based in Alpharetta, GA, KP Capital Funding. serves established businesses nationwide. Solomon personally
                 oversees every client engagement and maintains direct relationships with the bank representatives,
                 underwriters, and lenders that matter.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 text-sm font-semibold text-navy-900">
-              {['SBA Loan Specialist', 'Business Credit Expert', 'Capital Stack Strategist', 'Katy, TX Based'].map(
+              {['SBA Loan Specialist', 'Business Credit Expert', 'Capital Stack Strategist', 'Alpharetta, GA Based'].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-3">
                     <Check className="h-5 w-5 text-gold-500" />
@@ -633,7 +633,7 @@ export function ContactPage() {
                 <div className="space-y-6">
                   {[
                     { icon: Mail, label: 'Email', value: 'info@kpcapitalfunding.com', href: 'mailto:info@kpcapitalfunding.com' },
-                    { icon: MapPin, label: 'Location', value: 'Katy, TX', subtext: 'Serving businesses nationwide' },
+                    { icon: MapPin, label: 'Location', value: 'Alpharetta, GA', subtext: 'Serving businesses nationwide' },
                     { icon: Phone, label: 'Phone', value: '+1 770-355-3353', href: 'tel:9793563927' },
                     { icon: Clock3, label: 'Response Time', value: 'Within 1 business day' },
                   ].map((item) => (

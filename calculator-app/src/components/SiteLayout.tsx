@@ -57,7 +57,7 @@ export function SiteLayout() {
     <div className="min-h-screen bg-navy-900 text-white font-sans">
       <div className="border-b border-white/10 px-6 py-2 text-xs text-gray-400">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-          <div>Katy, TX - Serving Businesses Nationwide</div>
+          <div>Alpharetta, GA - Serving Businesses Nationwide</div>
           <a href="tel:9793563927" className="flex items-center gap-2 transition-colors hover:text-white">
             <Phone className="h-3 w-3" />
             <span>+1 770-355-3353</span>
@@ -145,7 +145,7 @@ export function SiteLayout() {
                 </a>
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-1 h-4 w-4 flex-shrink-0 text-gold-500" />
-                  <span>Katy, TX</span>
+                  <span>Alpharetta, GA</span>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@ export function SiteLayout() {
           </div>
 
           <div className="flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-xs text-gray-500 md:flex-row md:items-center">
-            <p>&copy; 2024 KP Capital Funding. All rights reserved. Katy, TX.</p>
+            <p>&copy; 2024 KP Capital Funding. All rights reserved. Alpharetta, GA.</p>
             <p className="max-w-2xl leading-relaxed md:text-left">
               KP Capital Funding is a commercial funding advisory firm. We do not guarantee funding approvals. Results
               vary based on individual business profile, credit history, and lender availability. This website is for
