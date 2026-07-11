@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { AlertTriangle, ArrowLeft, Check, ChevronRight, Lock } from 'lucide-react';
+import { GHLIframe } from '../components/GHLIframe';
 import { useCalculatorStore } from '../store';
 import { calculateScore, getFundingRange, getPrograms, getTier } from '../scoring';
 
@@ -261,26 +262,12 @@ function CalculatorResult() {
           </p>
 
           <div className="rounded bg-white p-8 text-navy-900">
-            <iframe 
-                src="https://funding.kpcapitalsolutions.com/widget/form/A5Yx3MTee2EkyAovKfAg" 
-                style={{width: '100%', height: '1400px', border: 'none', borderRadius: '0px', overflow: 'hidden'}} 
-                scrolling="no"
-                id="inline-A5Yx3MTee2EkyAovKfAg"  
-                data-layout="{'id':'INLINE'}" 
-                data-trigger-type="alwaysShow" 
-                data-trigger-value="" 
-                data-activation-type="alwaysActivated" 
-                data-activation-value="" 
-                data-deactivation-type="neverDeactivate" 
-                data-deactivation-value="" 
-                data-form-name="UNLOCK REPORT FORM" 
-                data-height="1200" 
-                data-layout-iframe-id="inline-A5Yx3MTee2EkyAovKfAg" 
-                data-form-id="A5Yx3MTee2EkyAovKfAg" 
-                title="UNLOCK REPORT FORM" 
-            > 
-            </iframe> 
-            <script src="https://funding.kpcapitalsolutions.com/js/form_embed.js"> </script>
+            <GHLIframe 
+              src="https://funding.kpcapitalsolutions.com/widget/form/A5Yx3MTee2EkyAovKfAg"
+              id="inline-A5Yx3MTee2EkyAovKfAg"
+              formId="A5Yx3MTee2EkyAovKfAg"
+              formName="UNLOCK REPORT FORM"
+            />
           </div>
 
           <div className="mt-6 text-center text-[0.65rem] text-gray-500">No obligation. We only get paid when you get funded.</div>

@@ -4,6 +4,7 @@ import kenBgImage from '../../../assets/images/ken-bg.png';
 import bgImage from '../../../assets/images/bg.webp';
 import kenImage from '../../../assets/images/Ken.png';
 import { BackgroundPaths } from '../components/ui/background-paths';
+import { GHLIframe } from '../components/GHLIframe';
 
 const homeStats = [
   { value: '72hrs', label: 'Fastest Loan Approval' },
@@ -231,7 +232,7 @@ function ArrowLink({ to, children, outline = false }: { to: string; children: Re
 export function HomePage() {
   return (
     <main className="flex-grow">
-      <section className="relative flex min-h-[90vh] flex-col justify-center overflow-hidden bg-navy-900 pb-48 pt-24 lg:min-h-screen lg:pb-0 lg:pt-0">
+      <section className="relative flex min-h-[90vh] flex-col justify-center overflow-hidden bg-navy-900 pb-[380px] pt-24 md:pb-[200px] lg:min-h-screen lg:pb-[140px] lg:pt-0">
         <div className="absolute inset-0 z-0">
           <img
             src={kenBgImage}
@@ -681,26 +682,12 @@ export function ContactPage() {
                 </div>
                 <div className="flex flex-grow items-center justify-center bg-gray-100 p-12">
                   <div className="w-full">
-                    <iframe 
-                        src="https://funding.kpcapitalsolutions.com/widget/form/fCsZX72jyFYHkqNd1UcS" 
-                        style={{width: '100%', height: '1200px', border: 'none', borderRadius: '0px', overflow: 'hidden'}} 
-                        scrolling="no"
-                        id="inline-fCsZX72jyFYHkqNd1UcS"  
-                        data-layout="{'id':'INLINE'}" 
-                        data-trigger-type="alwaysShow" 
-                        data-trigger-value="" 
-                        data-activation-type="alwaysActivated" 
-                        data-activation-value="" 
-                        data-deactivation-type="neverDeactivate" 
-                        data-deactivation-value="" 
-                        data-form-name="Contact Form" 
-                        data-height="614" 
-                        data-layout-iframe-id="inline-fCsZX72jyFYHkqNd1UcS" 
-                        data-form-id="fCsZX72jyFYHkqNd1UcS" 
-                        title="Contact Form" 
-                    > 
-                    </iframe> 
-                    <script src="https://funding.kpcapitalsolutions.com/js/form_embed.js"></script>
+                    <GHLIframe 
+                      src="https://funding.kpcapitalsolutions.com/widget/form/fCsZX72jyFYHkqNd1UcS"
+                      id="inline-fCsZX72jyFYHkqNd1UcS"
+                      formId="fCsZX72jyFYHkqNd1UcS"
+                      formName="Contact Form"
+                    />
                   </div>
                 </div>
               </div>
@@ -769,7 +756,10 @@ export function BookCallPage() {
 
             <div className="lg:col-span-7">
               <div className="overflow-hidden rounded-sm border border-gray-100 bg-white shadow-2xl">
-                <iframe src="https://funding.kpcapitalsolutions.com/widget/booking/KwRtTbJiggXtoWBmwLZt" style={{width: '100%', border: 'none', overflow: 'hidden', height: '800px'}} scrolling="no" id="KwRtTbJiggXtoWBmwLZt_1783600679722"></iframe><br/><script src="https://funding.kpcapitalsolutions.com/js/form_embed.js" type="text/javascript"></script>
+                <GHLIframe 
+                  src="https://funding.kpcapitalsolutions.com/widget/booking/KwRtTbJiggXtoWBmwLZt"
+                  id="KwRtTbJiggXtoWBmwLZt_1783600679722"
+                />
               </div>
             </div>
           </div>
