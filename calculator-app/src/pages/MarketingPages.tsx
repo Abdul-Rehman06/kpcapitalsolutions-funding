@@ -317,11 +317,15 @@ export function HomePage() {
           </div>
 
           <div className="relative">
-            <img
-              src={kenImage}
-              alt="Kenneth Buckner"
-              className="w-full rounded-sm shadow-2xl"
-            />
+            <div className="relative">
+              <img
+                src={kenImage}
+                alt="Kenneth Buckner"
+                className="w-full rounded-sm shadow-2xl"
+              />
+              {/* Dark overlay mask to blend image into the navy background slightly */}
+              <div className="absolute inset-0 rounded-sm bg-navy-900/20 mix-blend-overlay"></div>
+            </div>
             <div className="absolute -bottom-8 -left-8 max-w-md bg-navy-900 p-8 text-white shadow-2xl">
               <p className="mb-4 font-serif text-lg italic">"We build the business. We build the capital stack that funds it even better."</p>
               <div className="text-[0.65rem] font-bold uppercase tracking-widest text-gold-500">— Kenneth Buckner, Founder</div>
