@@ -2,7 +2,7 @@ import { ArrowRight, Check, Clock3, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import kenBgImage from '../../../assets/images/ken-bg.png';
 import bgImage from '../../../assets/images/bg.webp';
-import kenImage from '../../../assets/images/Ken.png';
+import kenImage from '../../../assets/images/KenV2.png';
 import { BackgroundPaths } from '../components/ui/background-paths';
 import { GHLIframe } from '../components/GHLIframe';
 
