@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Mail, MapPin, Menu, Phone, X } from 'lucide-react';
-import mainLogo from '../../../assets/logos/Main-Logo.png';
+import mainLogo from "../assets/logos/Main-Logo.png";
 
 const navItems = [
   { label: 'Home', to: '/' },
