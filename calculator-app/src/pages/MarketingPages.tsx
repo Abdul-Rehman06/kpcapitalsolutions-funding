@@ -7,9 +7,10 @@ import { BackgroundPaths } from '../components/ui/background-paths';
 import { GHLIframe } from '../components/GHLIframe';
 
 const homeStats = [
-  { value: '72hrs', label: 'Fastest Loan Approval' },
-  { value: '100%', label: 'Funding Commitment' },
-  { value: '$25M+', label: 'Funding Capital Deployed' },
+  { value: '$500K+', label: 'Average Capital Stack Built' },
+  { value: '72hrs', label: 'Average First Approval Time' },
+  { value: '100%', label: 'Done-For-You Process' },
+  { value: '$25K+', label: 'Minimum Monthly Revenue' },
 ];
 
 const operatorMarkets = [
