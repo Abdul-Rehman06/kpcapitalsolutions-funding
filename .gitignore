@@ -1,10 +1,23 @@
-calculator-app/node_modules/
-calculator-app/.vite/
-calculator-app/dist/
-calculator-app/*.tsbuildinfo
+# Dependencies
 node_modules/
+calculator-app/node_modules/
+
+# Build output
+dist/
+calculator-app/dist/
+
+# Logs
+*.log
 npm-debug.log*
-yarn-debug.log*
 yarn-error.log*
+
+# VS Code
+.vscode/
+
+# Environment
+.env
+.env.*
+
+# macOS / Windows
 .DS_Store
 Thumbs.db
