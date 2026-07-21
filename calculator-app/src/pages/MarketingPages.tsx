@@ -2,7 +2,7 @@ import { ArrowRight, Check, Clock3, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import kenBgImage from '../../../assets/images/ken-bg.png';
 import bgImage from '../../../assets/images/bg.webp';
-import kenImage from '../../../assets/images/KenV2.png';
+import kenImage from '../../../assets/images/Ken.png';
 import { BackgroundPaths } from '../components/ui/background-paths';
 import { GHLIframe } from '../components/GHLIframe';
 
@@ -294,7 +294,9 @@ export function HomePage() {
             <h2 className="mb-6 font-serif text-4xl font-bold md:text-5xl">
               Built for Operators,
               <br />
-              <span className="italic text-gray-500">Not Startups.</span>
+  <span className="font-serif italic font-normal text-gold-500">
+    Not Startups.
+    </span>
             </h2>
             <div className="mb-10 space-y-6 border-l-4 border-gold-500 pl-6 text-lg leading-relaxed text-gray-600">
               <p>
