@@ -567,11 +567,11 @@ export function AboutPage() {
                 practices, and growth-stage companies across the country.
               </p>
               <p>
-                After seeing the same patterns repeat, Solomon built KP Capital Funding. to solve the problem at its
+                After seeing the same patterns repeat, Ken built KP Capital Funding. to solve the problem at its
                 root: most business owners do not have a dedicated funding team.
               </p>
               <p>
-                Based in Alpharetta, GA, KP Capital Funding. serves established businesses nationwide. Solomon personally
+                Based in Alpharetta, GA, KP Capital Funding. serves established businesses nationwide. Ken personally
                 oversees every client engagement and maintains direct relationships with the bank representatives,
                 underwriters, and lenders that matter.
               </p>
@@ -611,7 +611,7 @@ export function AboutPage() {
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="mb-6 font-serif text-4xl font-bold md:text-5xl">Ready to Work With Us?</h2>
           <p className="mb-10 text-lg text-gray-600">
-            Book a 30-minute Funding Strategy Call with Solomon. We will review your profile and tell you exactly what
+            Book a 30-minute Funding Strategy Call with Ken. We will review your profile and tell you exactly what
             capital we can access for your business.
           </p>
           <ArrowLink to="/book-call">Book Your Strategy Call</ArrowLink>
