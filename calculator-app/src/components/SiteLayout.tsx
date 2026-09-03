@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Mail, MapPin, Menu, Phone, X } from 'lucide-react';
-import mainLogo from "../assets/logos/Main-Logo.png";
+import mainLogo from "../assets/logos/kp-capital-logo-horizontal_white.svg";
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -80,13 +80,7 @@ export function SiteLayout() {
           </nav>
 
           <div className="hidden items-center gap-4 lg:flex">
-            <Link
-              to="/contact"
-              className="btn-outline border-white/30 px-4 py-2 text-xs hover:border-white hover:bg-white hover:text-navy-900"
-            >
-              Check Eligibility
-            </Link>
-            <Link to="/book-call" className="btn-primary px-4 py-2 text-xs">
+             <Link to="/book-call" className="btn-primary px-4 py-2 text-xs">
               Book Strategy Call
             </Link>
           </div>
@@ -106,9 +100,6 @@ export function SiteLayout() {
             <nav className="flex flex-col gap-4 px-6 py-4">
               {mobileNav}
               <div className="mt-2 flex flex-col gap-3 border-t border-white/10 pt-4">
-                <Link to="/contact" className="btn-outline w-full justify-center">
-                  Check Eligibility
-                </Link>
                 <Link to="/book-call" className="btn-primary w-full justify-center">
                   Book Strategy Call
                 </Link>
